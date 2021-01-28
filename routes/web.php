@@ -34,3 +34,5 @@ Route::get('/candidati', function () {
 })->name('candidati');
 
 Route::get('/utenti', "MyController@check")->name("utenti");
+
+Route::get('/utenti/{id}', 'MyController@show')->name("users.show");

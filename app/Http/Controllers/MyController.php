@@ -12,4 +12,9 @@ class MyController extends Controller
       $data = MyModel::all();
       return view("utenti", compact("data"));
    }
+
+   public function show($id){
+      $user = MyModel::find($id);
+      return view("utente", compact("user"));
+   }
 }
